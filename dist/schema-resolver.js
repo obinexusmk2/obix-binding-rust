@@ -20,7 +20,6 @@ export function createSchemaResolver(config) {
             return config.schemaMode;
         },
         destroy() {
-            // Stateless — nothing to clean up
         },
     };
 }

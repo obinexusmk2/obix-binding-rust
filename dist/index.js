@@ -1,8 +1,3 @@
-/**
- * OBIX Rust Binding
- * Performance-critical components, WebAssembly target
- * Connects libpolycall FFI/polyglot bridge to Rust runtime
- */
 export { normalizeFunctionIdentifier, createFFITransport } from './ffi-transport.js';
 export { createWasmMemoryTracker } from './wasm-memory-tracker.js';
 export { createCrateRegistry } from './crate-registry.js';

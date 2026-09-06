@@ -5,13 +5,13 @@ export function createCrateRegistry() {
     return {
         registerFeature(name) {
             if (features.has(name))
-                return; // idempotent
+                return;
             features.set(name, { name, registeredAtMs: Date.now() });
             totalRegistered++;
         },
         removeFeature(name) {
             if (!features.has(name))
-                return; // idempotent
+                return;
             features.delete(name);
             totalRemoved++;
         },

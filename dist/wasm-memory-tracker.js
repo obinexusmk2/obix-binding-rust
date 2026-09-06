@@ -33,7 +33,6 @@ export function createWasmMemoryTracker() {
             wasmMemoryPages = 0;
             wasmMemoryBytes = 0;
             heapAllocationBytes = 0;
-            // peakMemoryBytes is preserved across reset
         },
         destroy() {
             this.reset();
